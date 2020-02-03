@@ -22,7 +22,7 @@ public class Question4 {
         else if (row > 0 && arr[row - 1][col]) {
             arr[row][col] = false;
 
-            return showMazePath(arr, row, row - 1);
+            return showMazePath(arr, row - 1, col);
         }
         else if (col > 0 && arr[row][col - 1]) {
             arr[row][col] = false;
