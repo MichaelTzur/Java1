@@ -29,6 +29,7 @@ public class Question4 {
         if (col > 0 && arr[row][col - 1]) {
             showMazePath(arr, row, col - 1);
         }
+        System.out.println();
     }
 
     private static void resetMaze(boolean[][] arr, int row) {
