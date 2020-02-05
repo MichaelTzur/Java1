@@ -6,7 +6,7 @@ public class Question4 {
         arr[row][col] = false;
 
         if (row == arr.length - 1 && col == arr[0].length - 1) {
-            System.out.println("success!");
+            System.out.println("end of maze");
 
             return;
         }
