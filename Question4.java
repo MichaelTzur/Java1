@@ -10,7 +10,7 @@ public class Question4 {
         if (row == arr.length - 1 && col == arr[0].length - 1) {
             System.out.println("end of maze");
 
-            endMaze(arr, 0);
+            resetMaze(arr, 0);
             return;
         }
         //go down
@@ -31,13 +31,13 @@ public class Question4 {
         }
     }
 
-    private static void endMaze(boolean[][] arr, int row) {
+    private static void resetMaze(boolean[][] arr, int row) {
 
         if (row == arr.length) {
             return;
         }
         Arrays.fill(arr[row], false);
-        endMaze(arr, row + 1);
+        resetMaze(arr, row + 1);
     }
 
     public static void main(String[] args) {
